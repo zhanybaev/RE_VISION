@@ -38,9 +38,12 @@ nav{
     font-style: normal;
     font-weight: 500;
     font-size: 180px;
-    line-height: 211px;
     color: #FFFFFF;
     margin-top: 191px;
+}
+
+.block1 marquee h1{
+    font-size: 180px;
 }
 
 .block1__content{
@@ -70,3 +73,38 @@ nav{
     background: transparent;
 }
 /* ! Block 1 Styles End */
+/* ! Block 2 Styles Start */
+.block2{
+    margin: 150px 127px;
+}
+.block2 h2{
+    margin-top: 150px;
+    font-weight: 500;
+    font-size: 160px;
+    line-height: 188px;
+    letter-spacing: -0.04em;
+}
+
+.block2__content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block2__content .arrow-down{
+    align-self: flex-end;
+}
+
+.block2__content-item{
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block2__content-item .item-paragraph{
+    font-weight: 300;
+    margin-top: 0;
+    height: auto;
+}
+/* ! Block 2 Styles End */
