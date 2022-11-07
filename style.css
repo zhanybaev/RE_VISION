@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url("./assets/fonts/WorkSans.ttf")
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+/* ! Navigation Styles Start */
+nav{
+    position: fixed;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 50px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* ! Navigation Styles End */
+/* ! Block 1 Styles Start */
+.block1{
+    background: url('./assets/images/КАРТИНКА ПЕРВОГО ЭКРАНА.svg');
+    background-size: cover;
+    height: 980px;
+}
+
+.block1 marquee{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 180px;
+    line-height: 211px;
+    color: #FFFFFF;
+    margin-top: 191px;
+}
+
+.block1__content{
+    margin: 160px 127px 0 147px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-redirect p{
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.item-paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 509px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.arrow-down{
+    border: none;
+    background: transparent;
+}
+/* ! Block 1 Styles End */
