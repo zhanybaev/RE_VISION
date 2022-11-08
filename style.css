@@ -13,6 +13,23 @@ html{
     box-sizing: border-box;
     font-family: 'Work Sans';
 }
+body{
+    background: #fff;
+}
+/* !Cursor Style */
+#cursor {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    top: var(--y, 0);
+    left: var(--x, 0);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    mix-blend-mode: difference;
+    transition: transform .2s;
+  }
 /* ! Navigation Styles Start */
 nav{
     position: fixed;
@@ -108,3 +125,17 @@ nav{
     height: auto;
 }
 /* ! Block 2 Styles End */
+
+#cirlce{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    top: var(--y, 0);
+    left: var(--x, 0);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    mix-blend-mode: difference;
+    transition: transform .2s;
+}
