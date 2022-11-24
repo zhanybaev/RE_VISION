@@ -21,6 +21,11 @@ html{
 body{
     background: #fff;
 }
+
+a{
+    color: #0E0E0E;
+    text-decoration: none;
+}
 /* !Cursor Style */
 #cursor {
     position: absolute;
@@ -265,6 +270,27 @@ nav{
 }
 
 .block5__content .arrow{
+    width: 59px;
     margin-left: 22px;
 }
 /* ! Block 5 Styles End */
+/* ! Footer Styles Start */
+footer{
+    border-top: 1px solid #0E0E0E;
+    background: #F3F3F3;
+    padding: 80px 0;
+}
+
+.social-links{
+    list-style: none;
+    width: 69%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links-item {
+    font-weight: 500;
+    font-size: 48px;
+}
+/* ! Footer Styles End */
