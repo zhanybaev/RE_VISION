@@ -10,6 +10,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden
 }
 
 *{
@@ -36,7 +37,7 @@ a{
     top: var(--y, 0);
     left: var(--x, 0);
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 3;
     mix-blend-mode: difference;
     transition: transform .2s;
   }
@@ -138,20 +139,40 @@ nav{
     height: auto;
 }
 /* ! Block 2 Styles End */
-
-#cirlce{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border-radius: 50%;
-    top: var(--y, 0);
-    left: var(--x, 0);
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    mix-blend-mode: difference;
-    transition: transform .2s;
+/* ! Block 3 Styles Start */
+.block3{
+    min-height: 900px;
+    background: #1E1E1E;
+    border-bottom: 1px solid #FBFBFB;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.block3 h2{
+    color: #FBFBFB;
+    font-size: 180px;
+}
+
+.block3__img{
+    background: url(./assets/images/n5D0VESu_4x\ 2.png) no-repeat;
+    width: 335px;
+    height: 453px;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.block3__text{
+    white-space: nowrap;
+}
+
+.block3__text-first, .block3__text-second{
+    transition: 0.09s;
+}
+/* ! Block 3 Styles End */
 /* ! Block 4 Styles Start */
 .block4{
     background: #1E1E1E;
