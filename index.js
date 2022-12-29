@@ -14,11 +14,6 @@ document.body.onmousemove = function(e) {
     );
     marginTop = e.clientY
 }
-window.scroll({
-  top: 100, 
-  left: 0, 
-  behavior: 'smooth'
-});
 const text1 = document.getElementsByClassName('block3__text-first')[0];
 const text2 = document.getElementsByClassName('block3__text-second')[0];
 document.addEventListener('scroll', ()=>{
@@ -32,7 +27,5 @@ document.addEventListener('scroll', ()=>{
       window.scrollY + marginTop
     ) 
     + 'px'
-  )
-  
-  console.log(marginTop);
+  )  
 })
