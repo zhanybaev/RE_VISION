@@ -211,6 +211,11 @@ nav{
     margin-top: 0;
     height: auto;
 }
+@media screen and (max-width:1050px){
+    .head-title{
+        font-size: 8rem;
+    }
+}
 @media screen and (max-width:770px){
     .block2{
         margin: 120px 0;
@@ -264,9 +269,11 @@ nav{
 }
 
 .block3__img{
+    height: calc(100vw * 0.3333 / 0.714285714);
+    width: 33.33%;
     background: url(./assets/images/n5D0VESu_4x\ 2.png) no-repeat;
-    width: 335px;
-    height: 453px;
+    min-width: 235px;
+    min-height: 329px;
     background-attachment: fixed;
     background-position: center;
     position: absolute;
@@ -325,6 +332,8 @@ nav{
 
 .block4__content-group img{
     margin-top: 80px;
+    width: calc(100vw * 0.322916667);
+    min-width: 195px;
 }
 
 .block4__content-description{
@@ -357,6 +366,10 @@ nav{
     margin-top: 14px;
 }
 
+.description-block:nth-child(1) .description-block-text{
+    display: none;
+}
+
 .description-block:nth-child(2){
     margin-top: 205px;
     width: 466px;
@@ -364,6 +377,137 @@ nav{
 
 .description-block:nth-child(6), .description-block:nth-child(3){
     margin-top: 148px;
+}
+@media screen and (max-width:1050px){
+    .block4__content-block{   
+        margin: 100px 50px 0;
+    }
+    .description-block:nth-child(2){
+        margin-top: 170px;
+        width: auto;
+    }
+    .description-block:nth-child(3), .description-block:nth-child(6){
+        margin-top: 90px;
+    }
+    .description-block{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:770px){
+    .block4__content-block{
+        gap: 50px;
+    }
+    .block4__subtitle{
+        font-size: 2rem;
+    }
+    .content-item:nth-child(3) {
+        margin-top: 260px;
+    }
+    .description-block-text{
+        margin-top: 15px;
+    }
+    .description-block:nth-child(2){
+        margin-top: 90px;
+    }
+    .description-block:nth-child(3){
+        margin-top: 80px;
+    }
+    .description-block:nth-child(6){
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:450px){
+    .block4__title{
+        margin-left: 10px;
+    }
+    .block4__subtitle{
+        font-size: 1.38888889rem;
+        line-height: 19px;
+    }
+    .content-item{
+        position: relative;
+        overflow:hidden;
+        width:194px;
+        height:300px;
+        margin-top: 0;
+    }
+    .content-item:nth-child(2) {
+        margin-top: 0;
+    }
+    .content-item:nth-child(3) {
+        margin-top: 35px;
+    }
+    .content-item img {
+        position: absolute;
+        margin-top: 40px !important;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:100%;
+        height:200px;
+        object-fit:cover;
+    }
+    .block4__content-block{
+        margin: 30px 10px 0;
+        gap: 8.13953488vw;
+        padding-bottom: 120px;
+    }
+    .block4__content-group img{
+        margin-top: 50px;
+    }
+    .block4__content-group{
+        gap: 450px;
+    }
+    .content-item{
+        margin-top: 0;
+    }
+    .description-block{
+        max-width: 179px;
+    }
+    .description-block-text{
+        letter-spacing: -0.01em;
+        line-height: 27px;
+    }
+    .description-block-text br{
+        display: none;
+    }
+    .descrition-block-title{
+        font-size: 1.25rem;
+    }
+    .description-block:nth-child(1) {
+        margin-top: 17px;
+    }
+    .description-block:nth-child(1) .description-block-text{
+        display: block;
+    }
+    .description-block:nth-child(2) {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:380px){
+    .block4__content-block{
+        padding-bottom: 80px;
+    }
+    .block4__title{
+        font-size: 2.9rem;
+    }
+    .content-item{
+        width: 42vw;
+    }
+    .content-item:nth-child(2) {
+        margin-top: 55px;
+    }
+    .content-item:nth-child(3) {
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:323px){
+    .content-item:nth-child(2) {
+        margin-top: 150px;
+    }
+    .content-item:nth-child(3) {
+        margin-top: 240px;
+    }
 }
 /* ! Block 4 Styles End */
 /* ! Block 5 Styles Start */
@@ -422,3 +566,6 @@ footer{
     font-size: 3rem;
 }
 /* ! Footer Styles End */
+footer{
+    display: none;
+}
