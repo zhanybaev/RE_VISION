@@ -1,5 +1,6 @@
 let marginTop=0;
-const setDocumentProperty=function(e) {
+const setDocumentProperty = window.innerWidth > 768 ?
+(e)=>{
   document.documentElement.style.setProperty (
     '--x', (
       e.clientX+window.scrollX
@@ -12,11 +13,10 @@ const setDocumentProperty=function(e) {
     ) 
     + 'px'
   );
+}:()=>
+document.body.onmousemove = function(e) {
+  setDocumentProperty(e)
   marginTop = e.clientY
-}
-document.body.onmousemove = (e)=>setDocumentProperty(e)
-if(window.innerWidth <= 770){
-  document.body.removeEventListener('mousemove', setDocumentProperty)
 }
 const text1 = document.getElementsByClassName('block3__text-first')[0];
 const text2 = document.getElementsByClassName('block3__text-second')[0];

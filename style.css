@@ -36,7 +36,7 @@ a{
         font-size: 14.4px !important;
     }
 }
-/* ! Cursor Style */
+/* !==============Cursor Style==============*/
 #cursor {
     position: absolute;
     width: 60px;
@@ -50,12 +50,12 @@ a{
     mix-blend-mode: difference;
     transition: transform .2s;
 }
-@media screen and (max-width:770px){
+@media screen and (max-width:1024px){
     #cursor{
         display: none;   
     }
 }
-/* ! Navigation Styles Start */
+/* !==============Navigation Styles Start==============*/
 nav{
     position: fixed;
     font-weight: 100;
@@ -68,30 +68,43 @@ nav{
     left: 0;
     right: 0;
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:600px){
     nav{
         position: initial;
         margin: 15px 10px 14px;
     }
 }
-/* ! Navigation Styles End */
-/* ! Block 1 Styles Start */
+/* !==============Navigation Styles End==============*/
+/* !==============Block 1 Styles Start==============*/
 .block1{
     background: url('./assets/images/КАРТИНКА ПЕРВОГО ЭКРАНА.svg');
     background-size: cover;
     height: 980px;
 }
 
-.block1 marquee{
+.block1 .marquee{
     font-style: normal;
     font-weight: 500;
     font-size: 180px;
     color: #FFFFFF;
-    margin-top: 191px;
+    padding-top: 191px;
+    scroll-behavior: smooth;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.block1 marquee h1{
+.block1 .marquee h1{
     font-size: 180px;
+    animation: marquee 30s linear infinite;
+    padding-left: 100%;
+    display: inline-block;
+}
+
+@keyframes marquee{
+    100%{
+        transform: translate(-100%, 0);
+    }
 }
 
 .block1__content{
@@ -145,9 +158,6 @@ nav{
         background-size: cover;
         height: 932px;
     }
-    .block1 marquee{
-        margin-top: 195px;
-    }
     .block1__content{
         margin: 236px 50px 0px;
         flex-direction: column-reverse;
@@ -178,8 +188,8 @@ nav{
         margin: 236px 35px 0px;
     }
 }
-/* ! Block 1 Styles End */
-/* ! Block 2 Styles Start */
+/* !==============Block 1 Styles End==============*/
+/* !==============Block 2 Styles Start==============*/
 .block2{
     margin: 150px 127px;
 }
@@ -253,10 +263,11 @@ nav{
         font-size:  3.33333333rem;
     }
 }
-/* ! Block 2 Styles End */
-/* ! Block 3 Styles Start */
+/* !==============Block 2 Styles End==============*/
+/* !==============Block 3 Styles Start==============*/
 .block3{
-    min-height: 900px;
+    min-height: 569px;
+    height: calc(100vw * 0.676);
     background: #1E1E1E;
     border-bottom: 1px solid #FBFBFB;
     position: relative;
@@ -282,16 +293,28 @@ nav{
     position: absolute;
     z-index: 2;
 }
-
 .block3__text{
     white-space: nowrap;
 }
-
 .block3__text-first, .block3__text-second{
     transition: 0.09s;
 }
-/* ! Block 3 Styles End */
-/* ! Block 4 Styles Start */
+@media screen and (max-width:1024px){
+    .block3__img{
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .block3 h2{
+        font-size: 7rem;
+    }
+}
+@media screen and (max-width:450px){
+    .block3 h2{
+        font-size: 64px;
+    }
+}
+/* !==============Block 3 Styles End==============*/
+/* !==============Block 4 Styles Start==============*/
 .block4{
     background: #1E1E1E;
 }
@@ -520,8 +543,8 @@ nav{
         margin-top: 240px;
     }
 }
-/* ! Block 4 Styles End */
-/* ! Block 5 Styles Start */
+/* !==============Block 4 Styles End==============*/
+/* !==============Block 5 Styles Start==============*/
 .block5{
     background: #F3F3F3;
     padding: 150px 127px 150px 30px;
@@ -607,8 +630,8 @@ nav{
         font-size: 40px;
     }
 }
-/* ! Block 5 Styles End */
-/* ! Footer Styles Start */
+/* !==============Block 5 Styles End==============*/
+/* !==============Footer Styles Start==============*/
 footer{
     border-top: 1px solid #0E0E0E;
     background: #F3F3F3;
@@ -626,16 +649,30 @@ footer{
 .social-links-item {
     font-size: 3rem;
 }
-/* ! Footer Styles End */
-@media screen and (max-width:770px){
+/* !==============Footer Styles End==============*/
+@media screen and (max-width:1250px){
     .social-links{
         width: auto;
-        margin: 0 13px;
+        margin: 0 100px;
     }
     .social-links-item{
         font-size: 36px;
     }
 }
+
+@media screen and (max-width:895px){
+    .social-links{
+        margin: 0 13px;
+    }
+}
+
+@media screen and (max-width:895px){
+    .social-links-item{
+        font-size: 25px;
+        letter-spacing: -0.01em;
+    }
+}
+
 @media screen and (max-width:450px){
     footer{
         background: white;
@@ -643,7 +680,6 @@ footer{
     }
     .social-links-item{
         font-size: 20px;
-        letter-spacing: -0.01em;
     }
 }
 @media screen and (max-width:450px){
