@@ -404,6 +404,11 @@ nav{
 .description-block:nth-child(6), .description-block:nth-child(3){
     margin-top: 148px;
 }
+@media screen and (min-width:1400px){
+    .content-item:nth-child(3){
+        margin-top: 250px;
+    }
+}
 @media screen and (max-width:1050px){
     .block4__content-block{   
         margin: 100px 50px 0;
